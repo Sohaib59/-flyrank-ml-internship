@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sohaib Shahzad</title>
+<meta name="description" content="[Your Name] — I ship ranking models I've already tried to break.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --main: #1F3A5F;
+    --text: #16181D;
+    --bg: #FAFAF8;
+    --accent: #2E7D5B;
+    --muted: #6b6f76;
+    --border: #E2E2DD;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, sans-serif;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 64px 24px 80px; }
+
+  header { margin-bottom: 40px; }
+  h1 { font-weight: 700; font-size: clamp(28px, 5vw, 38px); margin: 0 0 10px 0; color: var(--main); }
+  p.claim { font-size: 18px; margin: 0 0 22px 0; max-width: 520px; }
+  .rule { width: 44px; height: 4px; background: var(--accent); border: none; margin: 0 0 20px 0; }
+
+  nav.links { display: flex; flex-wrap: wrap; margin-bottom: 8px; }
+  nav.links a {
+    color: var(--accent); font-weight: 700; text-decoration: none;
+    border-bottom: 2px solid var(--accent); padding-bottom: 1px; font-size: 15px;
+    margin: 0 18px 10px 0;
+  }
+  nav.links a:hover { opacity: 0.75; }
+
+  section { margin-top: 40px; }
+  h2 {
+    font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--muted); font-weight: 700; margin: 0 0 14px 0;
+    border-bottom: 1px solid var(--border); padding-bottom: 8px;
+  }
+  p { margin: 0 0 14px 0; font-size: 16px; }
+
+  .placeholder {
+    border: 1px dashed var(--border); border-radius: 8px;
+    padding: 18px 20px; color: var(--muted); font-size: 15px; font-style: italic;
+  }
+
+  footer { margin-top: 64px; font-size: 13px; color: var(--muted); }
+
+  /* Badge slot -- hidden until capstone approval, per PF brief. Un-comment the
+     <img> below and drop badge.png next to this file once the badge asset
+     is issued. */
+  .badge-slot { margin-top: 28px; display: none; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <hr class="rule">
+      <h1>[Your Name]</h1>
+      <p class="claim">I ship ranking models I've already tried to break.</p>
+      <nav class="links">
+        <a href="https://linkedin.com/in/sohaibshahzad" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Sohaib59" target="_blank" rel="noopener">GitHub</a>
+        <a href="[link-to-your-cv.pdf]" target="_blank" rel="noopener">CV</a>
+        <a href="[your-booking-link]" target="_blank" rel="noopener">Book a call</a>
+      </nav>
+    </header>
+
+    <section>
+      <h2>What I'm building</h2>
+      <p>
+        Currently interning on FlyRank's ML team, building a ranking model that
+        decides which content pages need a refresh first. I validate before I
+        ship &mdash; caught my own optimistic 0.70 precision score and re-tested
+        it honestly before trusting it (it held at 0.64). Full write-up coming
+        as the capstone case study.
+      </p>
+    </section>
+
+    <section>
+      <h2>Latest</h2>
+      <div class="placeholder">
+        Capstone case study and future posts will land here as they're finished.
+      </div>
+    </section>
+
+    <div class="badge-slot">
+      <!-- <img src="badge.png" alt="FlyRank Internship Completion Badge" width="120"> -->
+    </div>
+
+    <footer>
+      &copy; <span id="year"></span> [Your Name]
+    </footer>
+
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
